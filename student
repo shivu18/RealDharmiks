@@ -1,0 +1,25 @@
+package first;
+
+
+public class students {
+	int id;
+String name;
+String course;
+
+	
+	public void print() {
+	System.out.println("Id is "+this.id); 
+	System.out.println("Name is "+name);
+	System.out.println("Course is "+course);
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		students ram = new students();
+		ram.id=1001;
+		ram.name="ram";
+		ram.course="java";
+		ram.print();	
+	
+}
+}
