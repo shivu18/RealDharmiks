@@ -1,0 +1,24 @@
+package kanika;
+
+
+public class student {
+	int id;
+	String name;
+	String course;
+	
+	 void print() {
+		System.out.println("Id is " +id);
+		System.out.println("Name is" +name);
+		System.out.println("course is " +course );
+		
+		public static void main(String []args){
+			student ram = new student();
+			ram.id = 1001;
+			ram.name = "Ram";
+			ram.course = "Java";
+			ram.print();
+			
+		}
+	}
+
+}
