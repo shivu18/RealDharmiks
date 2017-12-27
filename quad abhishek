@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class FirstProg {
+
+	static void computeroots(int a,int b,double D)
+	{
+	   float x,y=0;
+	   x=(-b+(float)Math.sqrt(D))/2*a;
+	   y=(-b-(float)Math.sqrt(D))/2*a;
+	   System.out.println("The roots are "+x);
+	   System.out.print(" and "+y);
+	}
+	 static double computeD(int a,int b,int c)
+	{
+		return Math.pow(b,2)-4*a*c;
+	}
+	public static void main(String[] args) 
+	{
+int a,b,c=0;double D=0;
+Scanner get=new Scanner(System.in);
+System.out.println("Enter coefficients for quadratic equation");
+a=get.nextInt();
+b=get.nextInt();
+c=get.nextInt();
+D=computeD(a,b,c);
+if(D>=0)
+{
+	computeroots(a,b,D);
+}
+else {
+	System.out.println("The roots are imaginary");
+}
+get.close();
+
+	}
+}
